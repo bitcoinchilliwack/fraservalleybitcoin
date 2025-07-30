@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #f7931a;      /* bitcoin orange */
+  --secondary-color: #2f2f2f;    /* dark grey for text */
+  --light-bg: #f7f5f0;
+  --max-width: 960px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light-bg);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.hero {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://source.unsplash.com/1600x900/?mountain,valley');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 5rem auto 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.section {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event {
+  background: #fff;
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.resource-list {
+  list-style: square;
+  padding-left: 1.2rem;
+}
+
+.resource-list li {
+  margin-bottom: 0.5rem;
+}
+
+.resource-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.note {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  margin-top: 2rem;
+  color: var(--secondary-color);
+}
