@@ -152,3 +152,36 @@ footer {
   margin-top: 2rem;
   color: var(--secondary-color);
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 50vh;           /* slightly shorter hero on mobile */
+    padding: 1rem;              /* reduce side padding */
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .section {
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+  }
+}
