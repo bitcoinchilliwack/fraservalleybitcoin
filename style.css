@@ -15,10 +15,13 @@ body {
 
 .hero {
   position: relative;
-  /* Add a gradient overlay, then fetch a random abstract landscape */
+  /* keep the dark gradient overlay in front of the image */
   background-image: linear-gradient(
-        ),
-    url('jamesrpgart_a_bright_banner_for_a_bitcoin_website_that_shows_an_4dc7d05b-12f9-4421-a60a-c684fa5c8475.png');
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('jamesrpgart_a_bright_banner_for_a_bitcoin_website_that_shows_an_4dc7d05b-12f9-4421-a60a-c684fa5c8475.png');  /* path to your uploaded image */
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -28,7 +31,6 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
 }
-
 
 nav {
   display: flex;
