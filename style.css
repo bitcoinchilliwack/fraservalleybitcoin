@@ -15,12 +15,13 @@ body {
 
 .hero {
   position: relative;
+  /* Add a gradient overlay, then fetch a random abstract landscape */
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.6)
     ),
-    url('https://source.unsplash.com/1600x900/?mountain,valley');
+    url('https://source.unsplash.com/1600x900/?abstract-landscape,mountains');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -30,6 +31,7 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
 }
+
 
 nav {
   display: flex;
