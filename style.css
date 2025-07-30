@@ -17,11 +17,8 @@ body {
   position: relative;
   /* Add a gradient overlay, then fetch a random abstract landscape */
   background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url('https://source.unsplash.com/1600x900/?abstract-landscape,mountains');
+        ),
+    url('jamesrpgart_a_bright_banner_for_a_bitcoin_website_that_shows_an_4dc7d05b-12f9-4421-a60a-c684fa5c8475.png');
   background-size: cover;
   background-position: center;
   color: #fff;
